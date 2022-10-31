@@ -1,0 +1,11 @@
+<div *ngIf="isLoggedIn === false">
+  <app-login *ngIf="isCreatingAccount === false"></app-login>
+  <app-create-user *ngIf="isCreatingAccount === true"></app-create-user>
+</div>
+
+<div *ngIf="isLoggedIn === true">
+  <app-navbar></app-navbar>
+  <app-event-list *ngIf="isCreatingEvent === false"></app-event-list>
+  <app-create-event *ngIf="isCreatingEvent === true"></app-create-event>
+</div>
+

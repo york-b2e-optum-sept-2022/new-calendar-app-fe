@@ -1,0 +1,4 @@
+<button *ngIf="isCreatingEvent === false" (click)="onCreateEventClick()">Create Event</button>
+<button *ngIf="isCreatingEvent === true" (click)="showEventList()">Event List</button>
+<button (click)="onEditAccountClick()">Edit Account</button>
+<button (click)="onLogoutClick()">Logout</button>
